@@ -1,0 +1,38 @@
+##Lists in python
+
+if __name__ == '__main__':
+    N = int(input())
+    
+    list_1 = []
+    
+    for i in range(N):
+        a = list(map(str,input().split( )))
+        list_1.append(a)
+    
+    arr = []
+    
+    for x in list_1:
+        if x[0] == "insert":
+            i = int(x[1])
+            e = int(x[2])
+            arr.insert(i,e)
+        
+        elif x[0] == "print":
+            print(arr)
+             
+        elif x[0] == "remove":
+            e = int(x[1])
+            arr.remove(e)
+             
+        elif x[0] == "append":
+            e = int(x[1])
+            arr.append(e)
+            
+        elif x[0] == "sort":
+            arr.sort()
+            
+        elif x[0] == "pop":
+            arr.pop()
+            
+        elif x[0] == "reverse":
+            arr.reverse() 

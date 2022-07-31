@@ -1,0 +1,10 @@
+##set.add()
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+if __name__=='__main__':
+    N=int(input())
+    name_of_country=set()
+    for i in range(N):
+        name_of_country.add(input())
+    print(len(name_of_country))

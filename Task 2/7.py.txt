@@ -1,0 +1,14 @@
+## Introduction to sets
+
+def average(array):
+    arr=set(array)
+    length=len(arr)
+    total=sum(arr)
+    avg=total/length
+    return avg
+
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    result = average(arr)
+    print(result)

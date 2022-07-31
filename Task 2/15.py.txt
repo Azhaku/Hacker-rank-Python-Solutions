@@ -1,0 +1,7 @@
+# set.symmetric difference()
+
+n=int(input())
+English_newspaper=set(map(int,input().split(' ')))
+b=int(input())
+French_newspaper=set(map(int,input().split(' ')))
+print(len(English_newspaper.symmetric_difference(French_newspaper)))

@@ -1,0 +1,11 @@
+##Tuples in python
+
+if __name__ == '__main__':
+    n = int(raw_input())
+    integer_list = map(int, raw_input().split())
+    list_1=[]
+    for i in integer_list:
+        list_1.append(i)
+        
+    t=tuple(list_1)
+    print(hash(t))

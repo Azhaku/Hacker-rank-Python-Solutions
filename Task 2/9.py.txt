@@ -1,0 +1,13 @@
+##Symmetric difference
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+if __name__=='__main__':
+    M=map(int,input().split(' '))
+    a=set(map(int,input().split(' ')))
+    N=map(int,input().split(' '))
+    b=set(map(int,input().split(' ')))
+    c=(a.difference(b)).union(b.difference(a))
+    
+    for i in sorted(c):
+        print(i)

@@ -1,0 +1,10 @@
+# strict superset
+
+A=set(map(int,input().split(' ')))
+N=int(input())
+output=True
+for i in range(N):
+    set_a=set(map(int,input().split(' ')))
+    if not A.issuperset(set_a)==True:
+        output=False
+print(output)

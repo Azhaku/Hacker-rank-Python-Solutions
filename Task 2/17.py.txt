@@ -1,0 +1,6 @@
+#Caption's room
+
+k = int(input())
+Room_list = list(map(int, input().split()))
+myset = set(Room_list)
+print(((sum(myset)*k)-(sum(Room_list)))//(k-1))

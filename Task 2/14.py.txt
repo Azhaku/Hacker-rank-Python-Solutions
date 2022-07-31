@@ -1,0 +1,9 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# set.differ()
+
+
+n=int(input())
+English_newspaper=set(map(int,input().split(' ')))
+b=int(input())
+French_newspaper=set(map(int,input().split(' ')))
+print(len(English_newspaper.difference(French_newspaper)))
