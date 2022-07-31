@@ -1,0 +1,12 @@
+## Integers come in all sizes
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+
+pow_a_b=pow(a,b)
+pow_c_d=pow(c,d)
+print(pow_a_b+pow_c_d)

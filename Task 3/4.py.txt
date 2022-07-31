@@ -1,0 +1,6 @@
+# Mod divmod
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+res = divmod(int(input()), int(input()))
+print(*res, res, sep='\n')
