@@ -1,0 +1,13 @@
+## 5. re.start() 
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import re
+s=input().strip()
+k=input().strip()
+r=re.finditer(r''+k[0]+'(?='+k[1:]+')',s)
+r=list(r)
+if r:
+    for i in r:
+        print((i.start(),i.end()-2+len(k)))
+else:
+    print((-1, -1))

@@ -1,0 +1,8 @@
+## 8.validating ph numbers
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+ 
+import re
+for i in range(int(input())):
+    n=input()
+    print('YES' if re.match(r'^[789](\d{9}$)',n) else 'NO')

@@ -1,0 +1,10 @@
+##4. re.findall problem
+
+import re
+s=re.findall(r'[QWRTYPSDFGHJKLZXCVBNqwrtypsdfghjklzxcvbnmM][aeioAEIOUu]{2,}(?=[QWRTYPSDFGHJKLZXCVBNqwrtypsdfghjklzxcvbnmM])',input().strip())
+
+if s:
+    for i in s:
+        print(i[1:])
+else:
+    print(-1)
