@@ -1,0 +1,13 @@
+## concatenate
+
+
+import numpy as np
+ 
+
+n,m,p = map(int,input().split())
+l=list()
+for i in range(n+m):
+    lis=list(map(int,input().split()))
+    l.append(lis)
+arr=np.array(l)
+print(np.reshape(arr,(n+m,p)))

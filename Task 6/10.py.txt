@@ -1,0 +1,7 @@
+## dot and cross
+
+import numpy as np
+
+N=int(input())
+A,B = (np.array([input().split() for _ in range(N)], dtype=int) for _ in range(2))
+print(np.dot(A,B))

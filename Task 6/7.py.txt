@@ -1,0 +1,12 @@
+## sum and prod
+
+import numpy as np
+n, m = map(int, input().split())
+l=[]
+for i in range(n):
+    lis=list(map(int,input().split()))
+    l.append(lis)
+arr=np.array(l)
+arr_sum=np.sum(arr,axis=0)
+arr_prod=np.prod(arr_sum,axis=0)
+print(arr_prod)

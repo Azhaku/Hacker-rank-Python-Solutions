@@ -1,0 +1,7 @@
+## polynomials
+
+import numpy as np
+
+val = [float(x) for x in input().split()]
+x = float(input())
+print(np.polyval(val,x))
