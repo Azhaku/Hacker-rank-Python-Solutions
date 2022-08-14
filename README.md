@@ -1,2 +1,2 @@
-# Internship_July_-2022
+# Python problems
 Tasks
