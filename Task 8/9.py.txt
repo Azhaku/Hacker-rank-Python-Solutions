@@ -1,0 +1,8 @@
+#Day 8: Least Square Regression Line
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+N=5
+xy = list(map(int, input().split()) for i in range(N))
+sx, sy, sx2, sxy = map(sum, zip(*[(x, y, x**2, x * y) for x, y in xy]))
+b = (N * sxy - sx * sy) / (N * sx2 - sx**2)
+a = (sy / N) - b * (sx / N)
+print('{:.3f}'.format(a + b * 80))

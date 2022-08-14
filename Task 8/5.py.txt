@@ -1,0 +1,19 @@
+##Day 6: The Central Limit Theorem I
+
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+from math import sqrt,erf
+x=int(input())
+n=int(input())
+mu=int(input())
+sigma=int(input())
+
+mu_sum=n*mu
+sigma_sum=sqrt(n)*sigma
+
+def fun_1(x,mu,sigma):
+    z=(x-mu)/sigma
+    return 0.5*(1+erf(z/(sqrt(2))))
+    
+print(round(fun_1(x,mu_sum,sigma_sum),4))

@@ -1,0 +1,17 @@
+## normal dis - II
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+import math
+mean, std = input().strip().split(" ")
+
+cdf = lambda x: 0.5 * (1 + math.erf((x - mean) / (std * (2 ** 0.5))))
+in_1=input().strip()
+in_2=input().strip()
+in_1=float(in_1)
+in_2=float(in_2)
+mean=float(mean)
+std=float(std)
+print(round((1-cdf(in_1))*100,2))
+print(round((1-cdf(in_2))*100,2))
+print(round((cdf(in_2))*100,2))

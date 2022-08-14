@@ -1,0 +1,12 @@
+## Day 6: The Central Limit Theorem II
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from math import sqrt, erf
+
+x=int(input())
+n=int(input())
+mu=float(input())
+sigma=float(input())
+
+cdf= 0.5 * (1+erf((x-mu*n)/((sqrt(n) * sigma) * sqrt(2))))
+print(round(cdf,4))

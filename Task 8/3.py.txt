@@ -1,0 +1,18 @@
+## normal dis I
+
+from math import sqrt,erf
+ 
+def fun_1(m,s,x):
+    z=(x - m)/(s * sqrt(2))
+    return 0.5 * (1 + erf(z))
+
+m,s=input().strip().split(' ')
+m=float(m)
+s=float(s)
+x=float(input().strip())
+x1,x2=input().strip().split(' ')
+x1=float(x1)
+x2=float(x2)
+
+print(round(fun_1(m,s,x),3))
+print(round(fun_1(m,s,x2) - fun_1(m,s,x1),3))

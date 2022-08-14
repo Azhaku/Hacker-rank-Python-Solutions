@@ -1,0 +1,18 @@
+## Day 6: The Central Limit Theorem III
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+from math import sqrt,erf
+n=int(input())
+mu=float(input())
+sigma=float(input())
+distribution_percentage=float(input())
+z_value=float(input())
+
+error=z_value*sigma/sqrt(n)
+
+x1 = mu - error
+x2 = mu + error
+
+print(x1)
+print(x2)
