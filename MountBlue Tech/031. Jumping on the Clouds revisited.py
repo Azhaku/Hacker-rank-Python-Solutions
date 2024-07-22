@@ -11,11 +11,11 @@ def jumpingOnClouds(c, k):
     rem_energy = 100
     
     jump = (0+k)%len(c)
-    rem_energy = 3 if c[jump]!=0 else 1
+    rem_energy -= 3 if c[jump]!=0 else 1
         
     while jump != 0:
         jump = (jump+k)%len(c)
-        rem_energy = 3 if c[jump]!=0 else 1
+        rem_energy -= 3 if c[jump]!=0 else 1
     return rem_energy
         
 
